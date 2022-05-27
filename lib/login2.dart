@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MyLogin extends StatefulWidget {
-  const MyLogin({Key? key}) : super(key: key);
+class MyLogin2 extends StatefulWidget {
+  const MyLogin2({Key? key}) : super(key: key);
 
   @override
   _MyLoginState createState() => _MyLoginState();
 }
 
-class _MyLoginState extends State<MyLogin> {
+class _MyLoginState extends State<MyLogin2> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +23,7 @@ class _MyLoginState extends State<MyLogin> {
             Container(
               padding: EdgeInsets.only(left: 35, top: 130),
               child: Text(
-                'Welcome\nBack',
+                'Hello\nThere',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
             ),
@@ -93,20 +93,6 @@ class _MyLoginState extends State<MyLogin> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.pushNamed(context, 'register');
-                                },
-                                child: Text(
-                                  'Sign Up',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      color: Color(0xff4c505b),
-                                      fontSize: 18),
-                                ),
-                                style: ButtonStyle(),
-                              ),
                               TextButton(
                                   onPressed: () {
                                     Navigator.pushNamed(
